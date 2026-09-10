@@ -2,13 +2,6 @@
 // Answers are submitted to the Supabase Edge Function and stored in the private database.
 window.CHOUCHOU_QUESTIONS = [
   {
-    id: "undersea-dream",
-    creature: "🐠",
-    title: "A place beneath the waves",
-    prompt: "If you could take me anywhere under the sea, where would we go?",
-    placeholder: "Tell me about the place you would choose…"
-  },
-  {
     id: "underwater-beauty",
     creature: "🐢",
     title: "Something beautiful",
