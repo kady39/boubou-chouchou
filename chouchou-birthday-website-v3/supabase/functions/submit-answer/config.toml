@@ -1,0 +1,3 @@
+# This endpoint is intentionally public because the birthday guest is not logged in.
+# The function performs its own validation and writes with a server-side secret.
+verify_jwt = false
