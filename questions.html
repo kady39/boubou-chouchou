@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions from the Deep 🌊</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ocean.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .questions-hero { max-width: 900px; margin: 0 auto; padding: 90px 20px 30px; text-align:center; }
+    .questions-grid { max-width: 1050px; margin: 0 auto; padding: 20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; }
+    .question-card { background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22); border-radius:24px; padding:24px; backdrop-filter:blur(10px); box-shadow:0 15px 40px rgba(0,0,0,.14); }
+    .question-creature { font-size:42px; margin-bottom:8px; }
+    .question-card h3 { line-height:1.4; margin:10px 0 18px; }
+    .question-card textarea { width:100%; min-height:125px; border-radius:15px; border:1px solid rgba(255,255,255,.35); padding:13px; resize:vertical; box-sizing:border-box; font:inherit; }
+    .save-answer { margin-top:12px; border:0; border-radius:999px; padding:11px 17px; cursor:pointer; }
+    .save-answer:disabled { opacity:.6; cursor:default; }
+    .answer-status { min-height:22px; margin-top:10px; font-size:.92rem; opacity:.9; }
+    .back-link { display:inline-block; margin-top:15px; }
+  </style>
+</head>
+<body class="ocean-page">
+  <main>
+    <section class="questions-hero">
+      <p class="eyebrow">A little exploration for you</p>
+      <h1>Questions from the Deep 🌊</h1>
+      <p>Some questions are better answered slowly… like bubbles rising from the bottom of the sea.</p>
+      <a class="back-link" href="ocean.html">← Back to the ocean</a>
+    </section>
+    <section id="questions-grid" class="questions-grid" aria-label="Interactive questions"></section>
+  </main>
+  <script src="js/config.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/answers.js"></script>
+  <script>
+    renderQuestionCards(document.getElementById("questions-grid"));
+  </script>
+</body>
+</html>
