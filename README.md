@@ -25,11 +25,6 @@ A private, ocean-themed birthday website made for Chouchou.
 - His favorite fish / favorite diving place
 - One or two things he says that you secretly remember
 
-## Important
-
-This version intentionally contains placeholders and sample text. Replace them with your real memories before publishing.
-
-No backend is required: everything currently runs in the browser.
 
 
 ## V3
